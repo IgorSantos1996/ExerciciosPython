@@ -9,3 +9,10 @@ while True:
         break
     print("Você escolheu o numero: %d " % (numero[escolhido-1]))
     
+numeros = [0, 0, 0, 0, 0]
+k = 0
+while k < 5:
+    numeros[k] = int(input("Numero %d: " % (k+1)))
+    k = k + 1
+while True:
+    escolhidos = int(input("Que posição deseja imprimir: (0 para sair)" ))
