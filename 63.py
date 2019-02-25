@@ -11,6 +11,14 @@ while True:
         break
     segunda.append(e)
 terceira = []
+
+
+# Aqui vamos criar uma outra lista, com os elementos da primeira
+# e da segunda. Existem várias formas de resolver este exercício.
+# Nesta solução, vamos pesquisar os valores a inserir na terceira
+# lista. Se não existirem, adicionaremos à terceira. Caso contrário,
+# não copiaremos, evitando assim os repetidos.
+
 duas_listas = primeira[:]
 duas_listas.extend(segunda)
 x = 0
@@ -27,3 +35,5 @@ x = 0
 while x < len(terceira):
     print("%d: %d" % (x, terceira[x]))
     x = x + 1
+
+
